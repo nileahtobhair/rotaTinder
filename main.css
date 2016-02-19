@@ -17,6 +17,7 @@ tr{
 	background: white;
 	border-radius: 4px;
 	text-align: center;
+	-webkit-transition: -webkit-transform 1s;
 }
 
 table{
@@ -46,6 +47,18 @@ background: #e6e6e6;
 	margin-top: -15%;
 }
 
+.turnRight{
+	-webkit-transform :rotate(20deg) ;
+}
+.turnLeft{
+	-webkit-transform :rotate(-20deg) ;
+}
+.moveLeft{
+	-webkit-transform :translate(-2550px,0px);
+}
+.moveRight{
+	-webkit-transform :translate(2550px,0px);
+}
 p,h1,h2{
 	font-family: Avenir;
 	text-align: center;

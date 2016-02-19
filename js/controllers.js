@@ -30,12 +30,23 @@ controller('driversController', function($scope) {
     ];
     $scope.yesPile = [];
     $scope.noPile = [];
+
     $scope.swipeLeft = function() {
-        $scope.yesPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
-        $scope.employeesList.splice($scope.employeesList.length-1, 1);
+      var num = 'tr:nth-of-type('+($scope.employeesList.length).toString()+')';
+        $(num).addClass('turnLeft');
+        setTimeout(function(){  
+          $(num).addClass('moveLeft');
+          $scope.noPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
+          $scope.employeesList.splice($scope.employeesList.length-1, 1);
+        }, 500);
     }
       $scope.swipeRight = function() {
-        $scope.noPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
-        $scope.employeesList.splice($scope.employeesList.length-1, 1);
+        var num = 'tr:nth-of-type('+($scope.employeesList.length).toString()+')';
+        $(num).addClass('turnRight');
+        setTimeout(function(){  
+          $(num).addClass('moveRight');
+          $scope.yesPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
+          $scope.employeesList.splice($scope.employeesList.length-1, 1);
+        }, 500);
     }
 });
