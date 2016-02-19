@@ -14,7 +14,7 @@ controller('driversController', function($scope) {
           givenName: 'Fernando',
               familyName: 'Alonso'
           },
-          stars: 1,
+          stars: 3,
           nationality: "Spanish"
           
       },

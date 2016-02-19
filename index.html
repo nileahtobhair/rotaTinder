@@ -4,8 +4,8 @@
   <title>Tinder</title>
 </head>
 
-<body ng-app="F1FeederApp" deps="angular-touch.js" ng-controller="driversController" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" >
-  <table ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" >
+<body ng-app="F1FeederApp" ng-controller="driversController" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" >
+  <table ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()" >
     <h1> ROTA</h1>
     <tbody ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
       <tr class="$index" ng-repeat="employee in employeesList" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
@@ -26,6 +26,7 @@
       <div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-touch.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
