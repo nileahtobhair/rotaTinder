@@ -14,7 +14,7 @@ controller('driversController', function($scope) {
           givenName: 'Fernando',
               familyName: 'Alonso'
           },
-          stars: 3,
+          stars: 4,
           nationality: "Spanish"
           
       },
@@ -26,6 +26,22 @@ controller('driversController', function($scope) {
           stars: 5,
           nationality: "English"
           
+      },
+      {
+          Employee: {
+          givenName: 'Filipe',
+              familyName: 'Massa'
+          },
+          stars: 4,
+          nationality: "Spanish"
+      },
+      {
+          Employee: {
+          givenName: 'Valtteri',
+              familyName: 'Bottas'
+          },
+          stars: 3,
+          nationality: "Italien"
       }
     ];
     $scope.yesPile = [];
