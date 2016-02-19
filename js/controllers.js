@@ -1,4 +1,4 @@
-angular.module('F1FeederApp.controllers', ['ngTouch']).
+angular.module('F1FeederApp.controllers', []).
 controller('driversController', function($scope) {
     $scope.employeesList = [
       {
