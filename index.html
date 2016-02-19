@@ -5,10 +5,10 @@
 </head>
 
 <body ng-app="F1FeederApp" ng-controller="driversController" >
-  <table >
+  <table on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
     <h1> ROTA</h1>
     <tbody>
-      <tr class="$index" ng-repeat="employee in employeesList" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
+      <tr class="$index" ng-repeat="employee in employeesList">
         <td> <img src="img/{{employee.Employee.givenName}}.png" /></td>
         <td>
           {{employee.Employee.givenName}}&nbsp;{{employee.Employee.familyName}}
