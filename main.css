@@ -55,10 +55,10 @@ p,h1,h2{
  @media screen and ( max-width: 1100px ){
          
          	table,tr {
-         		width: 70%;
+         		width: 65%;
          	}
          	.buttonContainer{
-         		margin-top: 100%;
+         		margin-top: 90%;
          		width: 50%;
          		padding-left: 15%;
          	}
