@@ -8,7 +8,7 @@
   <table ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()" >
     <h1> ROTA</h1>
     <tbody ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
-      <tr class="$index" ng-repeat="employee in employeesList" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
+      <tr class="$index" ng-repeat="employee in employeesList">
         <td> <img src="img/{{employee.Employee.givenName}}.png" /></td>
         <td>
           {{employee.Employee.givenName}}&nbsp;{{employee.Employee.familyName}}
