@@ -1,5 +1,5 @@
-angular.module('F1FeederApp.controllers', ['ngTouch']).
-controller('driversController', function($scope) {
+angular.module('RotaApp.controllers', ['ngTouch']).
+controller('employeeController', function($scope) {
     $scope.employeesList = [
       {
           Employee: {
@@ -49,9 +49,9 @@ controller('driversController', function($scope) {
 
     $scope.swipeLeft = function() {
       var num = 'tr:nth-of-type('+($scope.employeesList.length).toString()+')';
-         $('body').css('background','rgb(204, 41, 0');
+          $('body').css('background','rgb(204, 41, 0');
           $(num).addClass('turnLeft');
-        setTimeout(function(){  
+        setTimeout(function(){   //wait and move card from deck
           $('body').css('background','#e6e6e6');
           $(num).addClass('moveLeft');
           $scope.noPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
@@ -62,7 +62,7 @@ controller('driversController', function($scope) {
         var num = 'tr:nth-of-type('+($scope.employeesList.length).toString()+')';
         $(num).addClass('turnRight');
         $('body').css('background','rgb(133, 224, 133)');
-        setTimeout(function(){  
+        setTimeout(function(){    //wait and move card from deck
           $(num).addClass('moveRight');
           $('body').css('background','#e6e6e6');
           $scope.yesPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
