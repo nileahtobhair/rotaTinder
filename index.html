@@ -9,7 +9,7 @@
     <h1> ROTA</h1>
     <tbody>
       <tr class="$index" ng-repeat="employee in employeesList" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
-        <td> <img src="img/{{employee.Employee.givenName}}.png" /></td>
+        <td on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()"> <img src="img/{{employee.Employee.givenName}}.png" /></td>
         <td>
           {{employee.Employee.givenName}}&nbsp;{{employee.Employee.familyName}}
         </td>
