@@ -1,0 +1,54 @@
+td {
+	display:block;
+	margin: 0 auto;
+	width: 95%;
+	font-family: Avenir;
+	font-size: 20px;
+	padding: 2%;
+}
+
+img{
+	margin:5%;
+	width: 90%;
+}
+tr{
+	position: absolute;
+	width: 30%;
+	background: white;
+	border-radius: 4px;
+	text-align: center;
+}
+
+table{
+	display: block;
+	margin: 0 auto;
+	margin-top: 0%;
+	width: 30%;
+}
+body{
+background: #e6e6e6;
+}
+
+
+.buttonContainer{
+	display: block;
+	width: 30%;
+	margin: 40% auto 0 auto;
+	padding-left: 10%;
+}
+
+.buttonContainer img{
+	width: 25%;
+}
+
+.stars{
+	width: 40%;
+	margin-top: -15%;
+}
+
+p,h1,h2{
+	font-family: Avenir;
+	text-align: center;
+	margin: 0;
+}
+
