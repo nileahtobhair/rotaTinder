@@ -4,12 +4,12 @@
   <title>Tinder</title>
 </head>
 
-<body ng-app="F1FeederApp" ng-controller="driversController" >
-  <table on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
+<body ng-app="F1FeederApp" ng-controller="driversController" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" >
+  <table ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()" >
     <h1> ROTA</h1>
-    <tbody>
-      <tr class="$index" ng-repeat="employee in employeesList">
-        <td> <img src="img/{{employee.Employee.givenName}}.png" /></td>
+    <tbody ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
+      <tr class="$index" ng-repeat="employee in employeesList" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
+        <td on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()"> <img src="img/{{employee.Employee.givenName}}.png" /></td>
         <td>
           {{employee.Employee.givenName}}&nbsp;{{employee.Employee.familyName}}
         </td>
