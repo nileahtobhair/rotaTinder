@@ -49,8 +49,8 @@ controller('driversController', function($scope) {
 
     $scope.swipeLeft = function() {
       var num = 'tr:nth-of-type('+($scope.employeesList.length).toString()+')';
-       $('body').css('background','rgb(204, 41, 0');
-        $(num).addClass('turnLeft');
+         $('body').css('background','rgb(204, 41, 0');
+          $(num).addClass('turnLeft');
         setTimeout(function(){  
           $('body').css('background','#e6e6e6');
           $(num).addClass('moveLeft');
