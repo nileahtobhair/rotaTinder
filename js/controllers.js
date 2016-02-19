@@ -49,8 +49,10 @@ controller('driversController', function($scope) {
 
     $scope.swipeLeft = function() {
       var num = 'tr:nth-of-type('+($scope.employeesList.length).toString()+')';
+       $('body').css('background','rgba(204, 41, 0,0.9  ');
         $(num).addClass('turnLeft');
         setTimeout(function(){  
+          $('body').css('background','#e6e6e6');
           $(num).addClass('moveLeft');
           $scope.noPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
           $scope.employeesList.splice($scope.employeesList.length-1, 1);
@@ -59,8 +61,10 @@ controller('driversController', function($scope) {
       $scope.swipeRight = function() {
         var num = 'tr:nth-of-type('+($scope.employeesList.length).toString()+')';
         $(num).addClass('turnRight');
+        $('body').css('background','rgb(133, 224, 133)');
         setTimeout(function(){  
           $(num).addClass('moveRight');
+          $('body').css('background','#e6e6e6');
           $scope.yesPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
           $scope.employeesList.splice($scope.employeesList.length-1, 1);
         }, 500);
