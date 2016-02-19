@@ -52,3 +52,15 @@ p,h1,h2{
 	margin: 0;
 }
 
+ @media screen and ( max-width: 900px ){
+         
+         	table,tr {
+         		width: 70%;
+         	}
+         	.buttonContainer{
+         		margin-top: 100%;
+         		width: 50%;
+         		padding-left: 15%;
+         	}
+        }
+
