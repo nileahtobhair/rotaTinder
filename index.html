@@ -4,10 +4,10 @@
   <title>Tinder</title>
 </head>
 
-<body ng-app="F1FeederApp" ng-controller="driversController" on-swipe-right="swipeRight()" on-swipe-left="swipeLeft()" >
+<body ng-app="F1FeederApp" ng-controller="driversController">
   <table >
     <h1> ROTA</h1>
-    <tbody>
+    <tbody ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
       <tr class="$index" ng-repeat="employee in employeesList">
         <td> <img src="img/{{employee.Employee.givenName}}.png" /></td>
         <td>
