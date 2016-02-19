@@ -7,7 +7,7 @@
 <body ng-app="F1FeederApp" ng-controller="driversController">
   <table >
     <h1> ROTA</h1>
-    <tbody ng-swipe-left="swipeLeft()" ng-swipe-right="swipeLeft()">
+    <tbody ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()">
       <tr id="cards" class="$index" ng-repeat="employee in employeesList">
         <td> <img src="img/{{employee.Employee.givenName}}.png" /></td>
         <td>
