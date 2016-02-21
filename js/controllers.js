@@ -56,7 +56,12 @@ controller('employeeController', function($scope) {
           $(num).addClass('moveLeft');
           $scope.noPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
           $scope.employeesList.splice($scope.employeesList.length-1, 1);
+          
         }, 500);
+
+         setTimeout(function(){  
+          $(num).hide();
+             }, 1000);
     }
       $scope.swipeRight = function() {
         var num = 'tr:nth-of-type('+($scope.employeesList.length).toString()+')';
@@ -68,5 +73,8 @@ controller('employeeController', function($scope) {
           $scope.yesPile.push($scope.employeesList[$scope.employeesList.length-1]); //pop from the top
           $scope.employeesList.splice($scope.employeesList.length-1, 1);
         }, 500);
+         setTimeout(function(){  
+          $(num).hide();
+             }, 1000);
     }
 });
