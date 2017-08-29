@@ -10,9 +10,9 @@ I built this app as part of an internship application process I did a few years 
 
 I really like how it turned out and so have chosen to include it here.
 
-| Site Features     | Link                                           | 
-| -------------     |:-------------------------------------------:   | 
-| Technologies      | Javascript, CSS						         | 
-| Libraries         | AngularJS									     |
-| Live Demo		    | [Here](http://www.niamhlawlor.com/rotaTinder/) |
-| Open Source		| [Yes](https://niamhlawlor.com/rotaTinder/)     |
+| Site Features     | Link                                               | 
+| -------------     |:-------------------------------------------------: | 
+| Technologies      | Javascript, CSS						             | 
+| Libraries         | AngularJS									     	 |
+| Live Demo		    | [Here](https://niamhlawlor.com/rotaTinder/) 	  	 |
+| Open Source		| [Yes](https://github.com/nileahtobhair/rotaTinder) |
